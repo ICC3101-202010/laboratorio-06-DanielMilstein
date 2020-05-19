@@ -88,7 +88,7 @@ public class RegexUtilities
             
     }
     return pass;
-
+        
 
     }
 
@@ -123,7 +123,7 @@ public class RegexUtilities
                 }
             }
             Console.Clear();
-            LoadingScreen();
+            
         
 
 
@@ -251,162 +251,33 @@ public class RegexUtilities
 
     }
 
-    public static void LoadingScreen()
+    public static string Order(string s, string Al)
     {
-        Console.WriteLine("################################################################################");
-        Console.WriteLine("#        ##        ##        ##        ##        ##  ########        ##  ####  #");
-        Console.WriteLine("#  ########  ####  ##  ####  #####  #####  ########  ###########  ######  ##  ##");
-        Console.WriteLine("#        ##        ##  ####  #####  #####      ####  ###########  ########  ####");
-        Console.WriteLine("#######  ##  ########  ####  #####  #####  ########  ###########  ######  ##  ##");
-        Console.WriteLine("#        ##  ########        #####  #####  ########        ##        ##  ####  #");
-        Console.WriteLine("################################################################################");
-
-        /*
-        //"SPOTFLIX";
-        string c = "#";
-        string e = " ";
-        void Times(int a, string b)
+        if (Al == "left")
         {
-            for (int i = 0; i < a; i++)
-            {
-                Console.Write(b);
-                Thread.Sleep(10)  //Load animado
-                
-            }
+            string left = String.Format("{0,-22}", s);
+            return left;
         }
-        
-        
-        //Fila 1
-        Times(80, c);
-        Console.Write("\n");
 
-        //Fila 2
-        Times(1, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(2, e);
-        Times(8, c);
-        Times(8, e);
-        Times(2, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(1, c);
-            
-        Console.Write("\n");
-        //Fila 3
-        Times(1, c);
-        Times(2, e);
-        Times(8, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(2, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(8, c);
-        Times(2, e);
-        Times(2, c);
-        Times(9, c);
-        Times(2, e);
-        Times(6, c);
-        Times(2, e);
-        Times(2, c);
-        Times(2, e);
-        Times(2, c);
-            
-        Console.Write("\n");
-        //Fila4
-        Times(1, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(5, c);
-        Times(6, e);
-        Times(4, c);
-        Times(2, e);
-        Times(9, c);
-        Times(2, c);
-        Times(2, e);
-        Times(8, c);
-        Times(2, e);
-        Times(4, c);
+        else if (Al == "centre")
+        {
+            string centre = String.Format("{0,-22}",String.Format("{0," + ((22 + s.Length) / 2).ToString() + "}", s));
+            return centre;
+        }
 
-        Console.Write("\n");
+        else if (Al == "right")
+        {
+            string right = String.Format("{0,22}", s);
+            return right;
+        }
 
-        //Fila 5
-        Times(7, c);
-        Times(2, e);
-        Times(2, c);
-        Times(2, e);
-        Times(8, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(8, c);
-        Times(2, e);
-        Times(9, c);
-        Times(2, c);
-        Times(2, e);
-        Times(6, c);
-        Times(2, e);
-        Times(2, c);
-        Times(2, e);
-        Times(2, c);
+        else
+        {
+            return "";
+        }
+    } 
 
-        Console.Write("\n");
-
-        //Fila 6
-        Times(1, c);
-        Times(8, e);
-        Times(2, c);
-        Times(2, e);
-        Times(8, c);
-        Times(8, e);
-        Times(5, c);
-        Times(2, e);
-        Times(5, c);
-        Times(2, e);
-        Times(8, c);
-        Times(8, e);
-        Times(2, c);
-        Times(8, e);
-        Times(2, c);
-        Times(2, e);
-        Times(4, c);
-        Times(2, e);
-        Times(1, c);
-
-        Console.Write("\n");
-        //Fila 7
-        Times(80, c);
-        Console.Write("\n");
-        */
-
-    }
+    
 }
 
 

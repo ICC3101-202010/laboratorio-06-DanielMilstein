@@ -41,6 +41,7 @@
     <Compile Include="Department.cs" />
     <Compile Include="Section.cs" />
     <Compile Include="Block.cs" />
+    <Compile Include="IDivide.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
